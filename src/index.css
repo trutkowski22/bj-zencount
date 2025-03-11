@@ -62,4 +62,59 @@ body {
 button {
     padding: 10px 20px;
     font-size: 16px;
-    font-weight: bold; /* Bold button
+    font-weight: bold; /* Bold button text */
+    cursor: pointer;
+    background-color: #e76f51; /* Reddish-orange */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e9c46a; /* Sandy color on hover */
+    color: #264653;
+}
+
+.count-display, .bet-suggestion, .shoe-stats {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Lighter glass */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.count-display p, .bet-suggestion p, .shoe-stats p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+input[type="number"], select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+    color: #ffffff; /* White labels */
+}
+
+.advantage-indicator {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.advantage-indicator.player {
+    color: #2a9d8f; /*teal*/
+}
+
+.advantage-indicator.house {
+    color: #e76f51; /* Reddish-orange */
+}
